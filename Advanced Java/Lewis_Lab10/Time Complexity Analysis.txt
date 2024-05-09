@@ -1,0 +1,12 @@
+Time Complexity Analysis:
+
+During the input stage of the program, the main method takes O(n) time, where n represents the length of the input string. The findMaxSubstring method underneath that contains one loop that iterates through the input string.
+
+What Happens In This Loop:
+The while loop finds consecutive increasing substrings that runs in O(1) time for each. As this happens, the maxLength and the maxSubstring variables update as well. Since the while loop runs in O(1) time, we get left with O(n) substrings in total. Overall, the time complexity of the algorithm is O(n*n) or O(n^2).
+
+Space Complexity Analysis:
+
+I see the space complexity as O(1) because the used extra space does not depend on input size. I only use a stagnant amount of extra space for the variables in the code: maxLength, maxSubstring, i, j, length.
+
+In conclusion, the time complexity can be seen as O(n^2) in the worst case where n represents the length of the input string. Along with that, the space complexity can be seen as O(1) which is constant space usage regardles of input size.
